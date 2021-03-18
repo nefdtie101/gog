@@ -1,8 +1,9 @@
 /*This is the css for the home page*/
 
 body{
-    background: black;
     color: gold;
+    background-color: #161617;
+
 }
 
 .nav{

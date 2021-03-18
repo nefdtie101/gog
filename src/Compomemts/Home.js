@@ -1,7 +1,7 @@
 // This is the page that will display before user will sine in.
 import React from "react";
 import './css/home.css'
-import logo from '../img/GoG-Logo.jpg'
+import logo from '../img/goglogo.png'
 
 class Home extends React.Component{
     constructor(props) {
@@ -21,7 +21,7 @@ class Home extends React.Component{
                     As time went by we starting expanding all over South-Africa. Eventually we even reached certain individuals
                     over-seas. With our group growing older, we had more assets at our disposal.
                 </p>
-                <h2>Why sine up</h2>
+                <h2>Why sign up ?</h2>
                 <p>
                     You can join our e-sports sports community and play agents us or other clans. Challenge other people
                     for the king metal and win metals and increase your skills.
