@@ -10,7 +10,7 @@ class Home extends React.Component{
     render() {
         return(
             <div className='Home'>
-                <div className='nav'><a>Login</a></div>
+                <div className='nav'><a href='/login'>Login</a></div>
                 <h1>Gamers of Gondor</h1>
                 <h3>A community of Gamers</h3>
                 <img src={logo} alt='Gog logo'/>
