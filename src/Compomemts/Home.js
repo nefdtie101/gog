@@ -2,6 +2,7 @@
 import React from "react";
 import './css/home.css'
 import logo from '../img/goglogo.png'
+import Footer from "./Footer";
 
 class Home extends React.Component{
     constructor(props) {
@@ -26,7 +27,7 @@ class Home extends React.Component{
                     You can join our e-sports sports community and play agents us or other clans. Challenge other people
                     for the king metal and win metals and increase your skills.
                 </p>
-
+                <Footer/>
             </div>
         )
     }

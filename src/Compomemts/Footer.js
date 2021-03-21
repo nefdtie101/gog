@@ -6,18 +6,20 @@ import copy from "../img/Copywrite.png"
 import './css/footer.css'
 
 
-class Footer extends React.Component{
+class MyFooter extends React.Component{
     constructor(props) {
         super(props);
     }
     render() {
         return(
-            <footer>
-                <a href='https://discord.gg/kSnwd7JE2H'><img src={discord}/></a>
-                <p>©Gamers of Gondor</p>
-            </footer>
+            <div className='footer'>
+                <footer >
+                    <a href='https://discord.gg/kSnwd7JE2H'><img src={discord}/></a>
+                    <p>©Gamers of Gondor</p>
+                </footer>
+            </div>
         )
     }
 }
-export default Footer
+export default MyFooter
 

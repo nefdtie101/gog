@@ -1,18 +1,16 @@
-/*This is the css for the sine up*/
-.signup > img {
+.login > img{
     width: 15%;
     margin-top : 15px;
     margin-bottom: 15px
 }
-
-.signup > input{
+.login > input{
     margin-top: 10px;
     border-radius: 10px;
     height: 20px;
     border-style: solid;
 
 }
-.signup > button{
+.login > button{
     padding: 5px;
     margin-top: 10px;
     border-style: solid;
@@ -21,6 +19,7 @@
     color: black;
     background-color: gold;
     font-size:15px ;
+    margin-left: 5px;
 }
 .myFooter{
     position:absolute;
