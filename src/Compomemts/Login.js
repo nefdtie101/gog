@@ -55,6 +55,7 @@ class Login extends React.Component{
                 <h2>Login</h2>
                 <input id='userName' placeholder='Username' defaultValue=''/><br/>
                 <input id='pass1' placeholder='Password' type='Password' defaultValue='' /><br/>
+                <a href='/login/forgetpass'>Forgot Password</a><br/>
                 <button onClick={this.login} >Submit</button>
                 <button onClick={this.signUp} >Sign up</button>
                 <div className='myFooter'><MyFooter/></div>

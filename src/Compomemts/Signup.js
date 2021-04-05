@@ -41,6 +41,8 @@ class Signup extends React.Component{
         const Email = document.getElementById('Email').value;
         const pass1 = document.getElementById('pass1').value;
         const pass2 = document.getElementById('pass2').value;
+        Email.prototype.trim();
+        userName.prototype.trim();
         // Email pattern googled how to verify a email
         let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
 

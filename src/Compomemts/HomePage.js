@@ -5,6 +5,8 @@ import MainMenu from "./menu";
 import { BrowserRouter, Route } from 'react-router-dom'
 import Account from "./Account";
 import AccountEdit from "./AccountEdit";
+import EditEvent from "./editEvent";
+import ShowEvents from "./EventsOnHomeScreen";
 require('isomorphic-fetch')
 
 function HomeInfo(url ='',data={}){
@@ -66,7 +68,7 @@ class HomePage extends React.Component{
         if(verified===false){
             return(<Verify email={this.state.Email} />)
         }
-        else{
+        else {
           return(
               <div>
                   <MainMenu admin={this.state.Admin}/>
@@ -82,6 +84,12 @@ class HomePage extends React.Component{
                   </Route>
                   <Route exact={true} path='/home/account/edit'>
                       <AccountEdit/>
+                  </Route>
+                  <Route exact={true} path='/home/admin/events'>
+                      <EditEvent admin={this.state.Admin}/>
+                  </Route>
+                  <Route exact={true} path='/home'>
+                      <ShowEvents/>
                   </Route>
 
 

@@ -4,6 +4,7 @@ import './css/menu..css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Nav from 'react-bootstrap/Nav'
 
 
 class MainMenu extends React.Component{
@@ -26,15 +27,11 @@ class MainMenu extends React.Component{
         // This is wat admin user will see
         else{
             return(
-                <Container fluid={true}>
-                    <Row>
-                        <nav className='MyNav'>
-                            <Col as={'span'}><a href='/home' className='link' >Home</a></Col>
-                            <Col as={'span'}><a  href='/home/account' className='link'>Account</a></Col>
-                            <Col as={'span'}><a  href='/home/admin/Events' className='link'>Admin Events</a></Col>
-                        </nav>
-                    </Row>
-                </Container>
+              <div className='MyNav'>
+                  <a href='/home' className='link' >Home</a>
+                  <a  href='/home/account' className='link'>Account</a>
+                  <a  href='/home/admin/Events' className='link'>Events</a>
+              </div>
 
             )
         }

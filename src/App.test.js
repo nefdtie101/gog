@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+// This is testing of react
+import React from 'react' ;
+import Home from './Compomemts/Home'
+import renderer from 'react-test-renderer' ;
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+// This will test if the page is rendered properly
+test( 'renders correctly',()=>{
+  const input = renderer
+      .create(
+          <Home/>
+      )
+      .toJSON();
+  expect(input).toMatchSnapshot();
 });
